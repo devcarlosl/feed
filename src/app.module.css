@@ -8,3 +8,8 @@
   gap: 2rem;
   align-items: flex-start;
 }
+
+.wrapper main {
+  display: inherit;
+  gap: 2rem;
+}

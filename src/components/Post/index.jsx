@@ -1,16 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-export function Post({ author, comment }) {
+import styles from './post.module.css';
+
+export function Post() {
   return (
-    <div>
-      <strong>{author}</strong>
-      <p>{comment}</p>
-    </div>
+    <article className={styles.post}>
+      <header>
+        <div className={styles.author}>
+          <img src="https://github.com/devcarlosl.png" />
+          <div>
+            <strong>Carlos lopes</strong>
+            <span>Desenvolvedor Web</span>
+          </div>
+        </div>
+        <span>Publicado há 1h</span>
+      </header>
+    </article>
   );
 }
-
-Post.propTypes = {
-  author: PropTypes.string,
-  comment: PropTypes.string
-};
