@@ -67,3 +67,58 @@
 .content a:hover {
   color: var(--green-300);
 }
+
+.comment-form {
+  width: 100%;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-600);
+}
+
+.comment-form > strong {
+  color: var(--gray-100);
+  line-height: 1.6;
+}
+
+.comment-form textarea {
+  width: 100%;
+  border-radius: 8px;
+  color: var(--gray-300);
+  background-color: var(--gray-900);
+  border: 0;
+  margin: 1rem 0;
+  padding: 0.875rem 1rem;
+  height: 6rem;
+  line-height: 1.4;
+  resize: none;
+}
+
+.comment-form .container-button {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.comment-form:focus-within .container-button {
+  visibility: visible;
+  max-height: none;
+}
+
+.comment-form .container-button > button[type=submit] {
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--green-500);
+  border: 0;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  transition: background-color .1s;
+}
+
+.comment-form .container-button > button[type=submit]:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: var(--green-300);
+}
+
+.comment-form .container-button > button[type=submit]:hover {
+  background-color: var(--green-300);
+}
