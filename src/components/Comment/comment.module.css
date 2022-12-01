@@ -1,0 +1,57 @@
+.comment {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 8px;
+}
+
+.comment-info {
+  width: 100%;
+}
+
+.info {
+  position: relative;
+  border-radius: 8px;
+  background-color: var(--gray-700);
+  padding: 1rem;
+}
+
+.info > strong {
+  display: block;
+  color: var(--gray-100);
+  line-height: 1.6;
+}
+
+.info time {
+  color: var(--gray-400);
+  font-size: 0.750rem;
+  line-height: 1.6;
+}
+
+.info .trash-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: var(--gray-400);
+  background: transparent;
+  border: 0;
+}
+
+.info p {
+  margin: 1rem 0 0.5rem;
+  color: var(--gray-100);
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 1rem;
+  color: var(--gray-400);
+}

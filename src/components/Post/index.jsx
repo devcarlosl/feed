@@ -1,4 +1,5 @@
 import React from 'react';
+import { Comment } from '../Comment';
 
 import styles from './post.module.css';
 
@@ -40,6 +41,9 @@ export function Post() {
           </button>
         </div>
       </form>
+      <Comment />
+      <Comment />
+      <Comment />
     </article>
   );
 }
